@@ -1,12 +1,7 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
 body{
-    background:linear-gradient(135deg,#000,#1a1a1a,#000);
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#000;
     color:#fff;
     text-align:center;
     overflow-x:hidden;
@@ -14,40 +9,38 @@ body{
 
 .container{
     width:90%;
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+    max-width:800px;
+    margin:40px auto;
+    position:relative;
+    z-index:2;
 }
 
 .title{
-    font-size:3rem;
     color:#FFD700;
-    margin-bottom:15px;
-    animation:glow 2s infinite alternate;
+    font-size:48px;
+    text-shadow:0 0 20px gold;
 }
 
 .subtitle{
-    font-size:1.2rem;
     color:#ddd;
-    margin-bottom:30px;
+    font-size:20px;
+    margin:20px 0;
+    line-height:1.6;
 }
 
-.
-
 button{
-    background:gold;
-    color:black;
+    background:#FFD700;
+    color:#000;
     border:none;
-    padding:15px 35px;
+    padding:15px 30px;
     font-size:18px;
     border-radius:30px;
     cursor:pointer;
-    transition:.3s;
     font-weight:bold;
 }
 
 button:hover{
-    transform:scale(1.08);
+    transform:scale(1.05);
 }
 
 .hidden{
@@ -56,28 +49,23 @@ button:hover{
 
 #message{
     margin-top:30px;
-    padding:25px;
+    background:rgba(255,215,0,0.08);
     border:2px solid gold;
-    border-radius:15px;
-    background:rgba(255,215,0,.08);
+    border-radius:20px;
+    padding:30px;
+    text-align:left;
+    line-height:1.9;
+    font-size:18px;
 }
 
 #message h2{
-    color:gold;
-    margin-bottom:15px;
-}
-
-@keyframes glow{
-    from{
-        text-shadow:0 0 10px gold;
-    }
-    to{
-        text-shadow:0 0 30px gold,0 0 50px gold;
-    }
+    text-align:center;
+    color:#FFD700;
 }
 
 canvas{
     position:fixed;
     inset:0;
     pointer-events:none;
+    z-index:1;
 }
